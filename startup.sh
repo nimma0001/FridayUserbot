@@ -18,11 +18,11 @@ update_and_install_packages () {
     apt -qq update -y
     apt -qq install -y --no-install-recommends \
         git \
-        ffmpeg \
         mediainfo \
         unzip \
         wget \
         gifsicle 
+    apt -qq install -y ffmpeg
   }
   
 # Thanks To Userge For The Chrome Version Hecks  
