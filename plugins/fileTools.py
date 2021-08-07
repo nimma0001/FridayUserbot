@@ -246,7 +246,7 @@ async def upload(client, message):
     elif file.endswith(vid_ext):
         capt = f"File Name : `{file_name}` \nFile Size : `{humanbytes(size)}` \nFile Type : `Video (Guessed)`"
         if send_as_thumb:
-            await client.send_video(
+            await client.send_document(
                 message.chat.id,
                 file,
                 thumb="./main_startup/Cache/thumb.jpg",
